@@ -1,14 +1,46 @@
-# Example CODEOWNERS file
+# Default owner for all files in the repository
+* @username  
 
-# Assign an individual user as the owner of all files in the repo
-* @username
+# Owners for specific programming languages
+*.js @frontend-team  
+*.py @backend-team  
+*.go @golang-team  
+*.java @java-devs  
+*.rb @ruby-team  
 
-# Assign a team as the owner of all JavaScript files
-*.js @org/team-name
+# Owners for documentation and markdown files
+*.md @docs-team @nyakagwafred  
+*.txt @docs-team @nyakagwafred  
 
-# Assign multiple owners to a specific directory
-/docs/ @nyakagwafred @eniola10101
+# Owners for configuration and CI/CD files
+*.yaml @devops-team  
+*.yml @devops-team  
+*.json @devops-team  
 
-# Assign different owners to different file types
-*.py @python-devs
-*.md @docs-team
+# Owners for frontend and backend directories
+/frontend/ @frontend-team @nyakagwafred  
+/backend/ @backend-team @nyakagwafred  
+
+# Owners for database-related files
+/db/ @database-admins  
+*.sql @database-admins  
+
+# Owners for security-sensitive files
+.secrets/ @security-team  
+config/*.env @security-team  
+
+# Owners for GitHub Actions workflows
+.github/workflows/ @devops-team  
+
+# Owners for images and assets
+/assets/ @design-team  
+*.png @design-team  
+*.jpg @design-team  
+*.svg @design-team  
+
+# Owners for specific files
+README.md @maintainers @nyakagwafred  
+LICENSE @legal-team  
+
+# Assign @nyakagwafred as a general collaborator for review
+* @nyakagwafred
