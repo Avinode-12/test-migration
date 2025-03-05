@@ -7,7 +7,7 @@
 *.js @org/team-name
 
 # Assign multiple owners to a specific directory
-/docs/ @user1 @eniola10101
+/docs/ @nyakagwafred @eniola10101
 
 # Assign different owners to different file types
 *.py @python-devs
